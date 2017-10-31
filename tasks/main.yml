@@ -1,0 +1,11 @@
+---
+- block:
+  - name: install virtualenv
+    pip:
+      name: virtualenv
+      state: latest
+      
+  become: yes
+  become_method: sudo
+  tags:
+    - virtualenv_pip

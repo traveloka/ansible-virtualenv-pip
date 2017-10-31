@@ -1,0 +1,7 @@
+- src: https://github.com/traveloka/ansible-apt_sources_list
+  name: apt_sources_list
+  version: master
+
+- src: https://github.com/traveloka/ansible-pip
+  name: pip
+  version: master
