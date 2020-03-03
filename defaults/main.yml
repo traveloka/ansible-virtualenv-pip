@@ -1,0 +1,2 @@
+# Specifies virtualenv state
+virtualenv_pip_state: "latest"

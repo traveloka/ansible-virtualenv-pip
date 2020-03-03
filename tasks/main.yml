@@ -3,7 +3,8 @@
   - name: install virtualenv
     pip:
       name: virtualenv
-      state: latest
+      state: "{{ virtualenv_pip_state }}"
+      version: "{{ virtualenv_pip_version | default(omit) }}"
       
   become: yes
   become_method: sudo

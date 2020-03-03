@@ -8,7 +8,11 @@ No special pre-requisites.
 
 ## Role Variables ##
 
-None.
+See default variables on defaults/main.yml
+
+Optional Varibles:
+- name: virtualenv_pip_version
+  description: version of virtualenv to be installed if `virtualenv_pip_state` is set to present
 
 ## Dependencies ##
 
@@ -19,4 +23,4 @@ None.
     - hosts: servers
       roles:
         - role: shared/virtualenv_pip
-          apt_cache_valid_time: 21600
+
